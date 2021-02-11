@@ -4,14 +4,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Inter', sans-serif;
+}
 .colonna{ /* Debug */
   background-color: yellow;
   min-height: 150px;
   margin: 20px 0;
 }
 .contenitore, .contenitore0{
-  padding: 0 10%;
+  padding: 0 5%;
 }
+@media all and (max-width: 991px) {
+  .contenitore0{
+    padding: 0 1%;
+  }
+}
+@media all and (max-width: 767px) {
+  .contenitore0{
+    padding: 0;
+  }
+}
+
 section{
   padding: 20px 0;
 }
@@ -31,18 +45,147 @@ section.blueback{
 .align-center{
   text-align: center;
 }
+.white-text{
+  color: white;
+}
+.paragrafo{
+  font-size: 16px;
+}
 
 /* Poprietà header */
 header{
-  background-color: red; /* Debug */
-  min-height: 100px; /* Debug */
+  background-color: white;
+  /* min-height: 100px; */
+}
+header img{
+  height: 30px;
+  vertical-align: middle;
+}
+  /* Navbar BS */
+header .navbar-brand{
+  height: auto;
+}
+header .navbar-default{
+  background-color: transparent;
+  border: 0;
+}
+header .navbar{
+  margin-bottom: 0;
+}
+/* Links navbar BS */
+header .navbar-default .navbar-nav>li>a{
+  color: black;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  vertical-align: middle;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+header .navbar-default .navbar-nav>li>a i{
+  vertical-align: middle;
+  margin-left: 2px;
+}
+header .navbar-default .navbar-nav>li>a:hover,
+header .navbar-default .navbar-nav>li>a:active{
+  color: #006aff;
+}
+header .navbar-default .navbar-nav>.open>a,
+header .navbar-default .navbar-nav>.open>a:focus,
+header .navbar-default .navbar-nav>.open>a:hover{
+  background-color: transparent;
+  color: #006aff;
+}
+/* Link btn BS */
+header .btn-primary.active,
+header .btn-primary:active,
+header .open>.dropdown-toggle.btn-primary{
+  /* background-color: #004aff; */
+  background-color: transparent;
+  border-color: #004aff;
+  color: #004aff!important;
+  height: 40px;
+  margin: 10px 0;
+  width: auto;
+}
+header .btn-primary.active:hover,
+header .btn-primary.active:focus,
+header .btn-primary:active:focus,
+header .btn-primary:active:hover{
+  color: white!important;
+  border-color: #004aff;
+  background-color: #004aff!important;
+}
+#lastbtn{
+  max-width: 72px;
+}
+#lastbtn a{
+  padding: 4px 7px;
+}
+/* Hamburger BS */
+header .navbar-default .navbar-toggle{
+  border: 1px solid transparent;
+  margin: 13px 15px;
+}
+header .navbar-default .navbar-toggle .icon-bar{
+  background-color: #004aff;
+}
+/* BS bottone e navbar collapse visibili fino a 991px (Soluzione presa da internet)*/
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 
 /* Poprietà main */
 /* Riga jumbojoin */
 .jumbojoin{
-  background-color: blue; /* Debug */
-  min-height: 300px; /* Debug */
+  background-color: ; /* Debug */
+  min-height: 400px; /* Debug */
+  background-image: url("../img/jumbo.svg");
+  background-position: right 0 bottom 0;
+  background-size: cover;
 }
 
 /* Riga partners */
