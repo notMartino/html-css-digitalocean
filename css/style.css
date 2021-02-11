@@ -1,0 +1,65 @@
+/* Proprietà generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.colonna{ /* Debug */
+  background-color: yellow;
+  min-height: 150px;
+  margin: 20px 0;
+}
+.contenitore, .contenitore0{
+  padding: 0 10%;
+}
+section{
+  padding: 20px 0;
+}
+section.whiteback{
+  background-color: white;
+  min-height: 50px;
+}
+section.greyback{
+  background-color: #cecece;
+  min-height: 50px;
+}
+section.blueback{
+  background-color: dodgerblue;
+  min-height: 50px;
+  color: white;
+}
+.align-center{
+  text-align: center;
+}
+
+/* Poprietà header */
+header{
+  background-color: red; /* Debug */
+  min-height: 100px; /* Debug */
+}
+
+/* Poprietà main */
+/* Riga jumbojoin */
+.jumbojoin{
+  background-color: blue; /* Debug */
+  min-height: 300px; /* Debug */
+}
+
+/* Riga partners */
+.partners{
+  min-height: 200px;  /* Debug */
+}
+
+/* Riga deploy */
+
+/* Riga features */
+
+/* Riga region */
+
+/* Riga developmente slide */
+
+/* Proprietà footer */
+footer{
+  background-color: blue;
+  min-height: 400px;
+}
