@@ -6,6 +6,7 @@
 }
 body{
   font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 .colonna{ /* Debug */
   background-color: yellow;
@@ -34,7 +35,8 @@ section.whiteback{
   min-height: 50px;
 }
 section.greyback{
-  background-color: #cecece;
+  /* background-color: rgb(242, 242, 242); */
+  background-color: #f3f5f9;
   min-height: 50px;
 }
 section.blueback{
@@ -53,6 +55,9 @@ section.blueback{
 }
 .black-text{
   color: black;
+}
+.grey-text{
+  color: grey;
 }
 .paragrafo{
   font-size: 16px;
@@ -269,15 +274,63 @@ header .navbar-default .navbar-toggle .icon-bar{
 }
 /* link terms */
 .blue-link{
+  text-decoration: none;
   color: dodgerblue;
+}
+.blue-link i{
+  vertical-align: middle;
+}
+.googlesign .blue-link{
+  text-decoration: underline;
 }
 /* Riga partners */
 .partners{
-  min-height: 200px;  /* Debug */
+  min-height: 150px;  /* Debug */
+}
+.partners img{
+  max-width: 100%;
+  min-height: 150px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .partners img{
+    min-height: 110px;
+  }
+}
+@media all and (max-width: 767px){
+  .partners img{
+    min-height: 80px;
+  }
 }
 
 /* Riga deploy */
-
+.deploy p{
+  margin-bottom: 40px;
+}
+@media all and (max-width: 991px) {
+  .deploy p{
+    margin-bottom: 15px;
+  }
+}
+.deploy ul{
+  list-style-type: none;
+  border-left: 2px solid #cecece;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.deploy li{
+  text-align: left;
+  padding: 10px 10px;
+}
+.deploy li a:hover,
+.deploy li a:focus{
+  color: darkgrey;
+  text-decoration: none;
+}
+.deploy .finestra{
+  text-align: left;
+}
 /* Riga features */
 
 /* Riga region */
