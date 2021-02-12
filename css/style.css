@@ -13,7 +13,7 @@ body{
   margin: 20px 0;
 }
 .contenitore, .contenitore0{
-  padding: 0 5%;
+  padding: 0 10%;
 }
 @media all and (max-width: 991px) {
   .contenitore0{
@@ -48,6 +48,12 @@ section.blueback{
 .white-text{
   color: white;
 }
+.blue-text{
+  color: dodgerblue;
+}
+.black-text{
+  color: black;
+}
 .paragrafo{
   font-size: 16px;
 }
@@ -55,7 +61,11 @@ section.blueback{
 /* Poprietà header */
 header{
   background-color: white;
-  /* min-height: 100px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 header img{
   height: 30px;
@@ -72,15 +82,25 @@ header .navbar-default{
 header .navbar{
   margin-bottom: 0;
 }
+@media all and (min-width: 768px) and (max:width 1099px){
+  header .navbar-nav:first-child{
+    margin-left: 2%;
+  }
+}
+@media all and (min-width: 1100px){
+  header .navbar-nav:first-child{
+    margin-left: 9%;
+  }
+}
 /* Links navbar BS */
 header .navbar-default .navbar-nav>li>a{
   color: black;
   line-height: 30px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   vertical-align: middle;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 header .navbar-default .navbar-nav>li>a i{
   vertical-align: middle;
@@ -102,8 +122,8 @@ header .btn-primary:active,
 header .open>.dropdown-toggle.btn-primary{
   /* background-color: #004aff; */
   background-color: transparent;
-  border-color: #004aff;
-  color: #004aff!important;
+  border-color: #4d9bfd;
+  color: #4d9bfd!important;
   height: 40px;
   margin: 10px 0;
   width: auto;
@@ -113,8 +133,8 @@ header .btn-primary.active:focus,
 header .btn-primary:active:focus,
 header .btn-primary:active:hover{
   color: white!important;
-  border-color: #004aff;
-  background-color: #004aff!important;
+  border-color: #4d9bfd;
+  background-color: #4d9bfd!important;
 }
 #lastbtn{
   max-width: 72px;
@@ -181,13 +201,76 @@ header .navbar-default .navbar-toggle .icon-bar{
 /* Poprietà main */
 /* Riga jumbojoin */
 .jumbojoin{
-  background-color: ; /* Debug */
-  min-height: 400px; /* Debug */
+  background-color: dodgerblue; /* Debug */
+  min-height: 500px; /* Debug */
   background-image: url("../img/jumbo.svg");
   background-position: right 0 bottom 0;
   background-size: cover;
+  padding: 60px 0;
+  margin-top: 60px;
+}
+  /* Titolo jumbo */
+.jumbojoin .big{
+  font-size: calc(30px + 0.5vw);
+}
+/* Finestra bianca sx */
+.googlesign{
+  background-color: white;
+  padding: 15px 20px 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.googlesign h3, .jumbojoin h2{
+  font-weight: 700;
+}
+.googlesign form input{
+  width: 100%;
+  min-height: 35px;
+  padding: 5px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin: 0 0 15px;
 }
 
+/* Bottoni BS finestra bianca */
+.googlesign .btn-primary.active,
+.googlesign .btn-primary:active,
+.googlesign .open>.dropdown-toggle.btn-primary{
+  background-color: dodgerblue;
+  width: 100%;
+  border-color:  dodgerblue;
+  margin: 0 0 5px;
+  font-size: 15px;
+  overflow: hidden;
+  font-weight: 600;
+}
+/* Bottoni:hover BS finestra bianca */
+.googlesign  .btn-primary.active:hover,
+.googlesign  .btn-primary.active:focus,
+.googlesign  .btn-primary:active:focus,
+.googlesign  .btn-primary:active:hover{
+  background-color: blue;
+  border-color: blue;
+}
+/* Bottoni BS google */
+.googlesign #google {
+  background-color: white;
+  border: 1px solid #cecece;
+  color: grey;
+  position: relative;
+}
+/* Immagine btn BS google */
+#google img{
+  float: left;
+  height: 20px;
+}
+.googlesign p{
+  margin-top: 10px;
+}
+/* link terms */
+.blue-link{
+  color: dodgerblue;
+}
 /* Riga partners */
 .partners{
   min-height: 200px;  /* Debug */
