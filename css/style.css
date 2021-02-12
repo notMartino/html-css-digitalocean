@@ -238,6 +238,7 @@ header .navbar-default .navbar-toggle .icon-bar{
   border: 1px solid #cecece;
   border-radius: 5px;
   margin: 0 0 15px;
+  color: black;
 }
 
 /* Bottoni BS finestra bianca */
@@ -298,12 +299,12 @@ header .navbar-default .navbar-toggle .icon-bar{
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .partners img{
-    min-height: 110px;
+    min-height: 120px;
   }
 }
 @media all and (max-width: 767px){
   .partners img{
-    min-height: 80px;
+    min-height: 100px;
   }
 }
 
@@ -378,9 +379,35 @@ header .navbar-default .navbar-toggle .icon-bar{
     background-color: dodgerblue;
 }
 /* Riga features */
-
+.features{
+  margin-top: 20px;
+  text-align: left;
+}
 /* Riga region */
-
+.region{
+  background: linear-gradient(to bottom, #0048c5 50%, #001e9a 100%);
+}
+/* tabella regioni */
+.region table{
+  width: 100%;
+  margin: 10px 0 30px;
+}
+.region tr {
+  border-bottom: 1px solid white;
+}
+.region tr:last-child {
+  border-bottom-width: 0;
+}
+.region td{
+  padding: 10px 15px;
+  text-align: left;
+}
+.region tr td:last-child{
+  text-align: right;
+}
+.region table a{
+  color: #00d5d1;
+}
 /* Riga developmente slide */
 
 /* Proprietà footer */
