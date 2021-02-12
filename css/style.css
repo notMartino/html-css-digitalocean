@@ -28,7 +28,7 @@ body{
 }
 
 section{
-  padding: 20px 0;
+  padding: 40px 0;
 }
 section.whiteback{
   background-color: white;
@@ -52,6 +52,9 @@ section.blueback{
 }
 .blue-text{
   color: dodgerblue;
+}
+.navy-text{
+  color:#031c4e;
 }
 .black-text{
   color: black;
@@ -330,6 +333,49 @@ header .navbar-default .navbar-toggle .icon-bar{
 }
 .deploy .finestra{
   text-align: left;
+}
+/* Riga designed, slide */
+.slide{
+  position: relative;
+}
+.slide img{
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.slide i{
+  font-size: 30px;
+  vertical-align: middle;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+@media all and (max-width: 767px) {
+  .slide i{
+    display: none;
+  }
+}
+.slide i.left{
+  color: grey;
+  margin-right: 2%;
+  top: 50%;
+  left: -30px;
+}
+.slide i.right{
+  color: navy;
+  margin-left: 2%;
+  top: 50%;
+  right: -30px;
+}
+
+.blue-dot{
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  border-radius: 50%;
+}
+.blue-dot:hover, .blue-dot#clicked{
+    background-color: dodgerblue;
 }
 /* Riga features */
 
