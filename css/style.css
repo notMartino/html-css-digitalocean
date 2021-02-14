@@ -343,24 +343,24 @@ header .navbar-default .navbar-toggle .icon-bar{
   max-width: 100%;
   margin-bottom: 10px;
 }
-.slide i{
+.slide i, .slide-window i{
   font-size: 30px;
   vertical-align: middle;
   position: absolute;
   transform: translate(0, -50%);
 }
 @media all and (max-width: 767px) {
-  .slide i{
+  .slide i, .slide-window i{
     display: none;
   }
 }
-.slide i.left{
+.slide i.left, .slide-window i.left{
   color: grey;
   margin-right: 2%;
   top: 50%;
   left: -30px;
 }
-.slide i.right{
+.slide i.right, .slide-window i.right{
   color: navy;
   margin-left: 2%;
   top: 50%;
@@ -409,7 +409,28 @@ header .navbar-default .navbar-toggle .icon-bar{
   color: #00d5d1;
 }
 /* Riga developmente slide */
-
+.slide-window{
+  background-color: white;
+  position: relative;
+  min-height: 150px;
+  padding: 50px 10px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+.slide-window img{
+  margin: 20px 10px 10px;
+  width: 220px;
+  max-width: 85%;
+}
+.slide-window p{
+  margin: 10px;
+}
+.slide-window h5{
+  margin: 15px 10px 0;
+}
+.slide-window div{
+  margin-bottom: 20px;
+}
 /* Proprietà footer */
 footer{
   background-color: blue;
