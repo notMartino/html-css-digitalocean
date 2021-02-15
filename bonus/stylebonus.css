@@ -1,0 +1,70 @@
+/* BONUS */
+/* Help chat squalo */
+.help-chat{
+  height: 90px;
+  width: 90px;
+  background: dodgerblue;
+  position: fixed;
+  z-index: 100;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 5px;
+  padding: 10px 5px 5px;
+  box-shadow: 0 0 5px 1px grey;
+  cursor: pointer;
+}
+.help-chat img{
+  width: 100%;
+}
+
+/* Chat bianca a comparsa */
+.help-chat .chat{
+  opacity: 0.1;
+  visibility: hidden;
+  height: 90px;
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  z-index: 110;
+  right: 110px;
+  bottom: 0px;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 0 5px 1px grey;
+}
+.help-chat:hover .chat{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s;
+}
+/* Icona e chat bianca che si spostano a sx e diventano meno visibili */
+@media all and (max-width: 1199px) {
+  .help-chat{
+    bottom: 130px;
+    left: 30px;
+    opacity: 0.3;
+  }
+  .help-chat:hover{
+    opacity: 1;
+    transition: opacity 1s;
+  }
+  .help-chat .chat{
+    bottom: -105px;
+    left: 0px;
+  }
+}
+/* Bollino notifiche */
+.bollino{
+  text-align: center;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  border: 5px solid white;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 0 5px 1px grey;
+}
