@@ -8,15 +8,12 @@ body{
   font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
-.colonna{ /* Debug */
-  background-color: yellow;
-  min-height: 150px;
-  margin: 20px 0;
-}
+  /* Container 10%, 0 */
 .contenitore, .contenitore0{
   padding: 0 10%;
 }
-@media all and (max-width: 991px) {
+  /* Container0 diminuise a Xpx */
+@media all and (max-width: 1199px) {
   .contenitore0{
     padding: 0 1%;
   }
@@ -26,27 +23,22 @@ body{
     padding: 0;
   }
 }
-
+  /* Proprietà generale sezione */
 section{
   padding: 40px 0;
 }
+  /* Proprietà colori sfondo sezione */
 section.whiteback{
   background-color: white;
-  min-height: 50px;
 }
 section.greyback{
-  /* background-color: rgb(242, 242, 242); */
   background-color: #f3f5f9;
-  min-height: 50px;
 }
-section.blueback{
-  background-color: dodgerblue;
-  min-height: 50px;
-  color: white;
-}
+  /* Proprietà testo */
 .align-center{
   text-align: center;
 }
+  /* Colori testo */
 .white-text{
   color: white;
 }
@@ -64,6 +56,19 @@ section.blueback{
 }
 .paragrafo{
   font-size: 16px;
+}
+/* Links blu */
+.blue-link{
+  text-decoration: none;
+  color: dodgerblue;
+}
+.blue-link:hover{
+  text-decoration: none;
+  color: blue;
+  transition: color 0.7s;
+}
+.blue-link i{
+  vertical-align: middle;
 }
 
 /* Poprietà header */
@@ -90,16 +95,13 @@ header .navbar-default{
 header .navbar{
   margin-bottom: 0;
 }
-@media all and (min-width: 768px) and (max:width 1099px){
-  header .navbar-nav:first-child{
-    margin-left: 2%;
-  }
-}
-@media all and (min-width: 1100px){
+  /* Margine sx ai link centrali */
+@media all and (min-width: 1200px){
   header .navbar-nav:first-child{
     margin-left: 9%;
   }
 }
+
 /* Links navbar BS */
 header .navbar-default .navbar-nav>li>a{
   color: black;
@@ -110,10 +112,12 @@ header .navbar-default .navbar-nav>li>a{
   padding-right: 5px;
   padding-left: 5px;
 }
+/* Icona freccia nei links */
 header .navbar-default .navbar-nav>li>a i{
   vertical-align: middle;
   margin-left: 2px;
 }
+/* Links navbar :hover*/
 header .navbar-default .navbar-nav>li>a:hover,
 header .navbar-default .navbar-nav>li>a:active{
   color: #006aff;
@@ -124,33 +128,31 @@ header .navbar-default .navbar-nav>.open>a:hover{
   background-color: transparent;
   color: #006aff;
 }
-/* Link btn BS */
+/* Link btn BS header*/
 header .btn-primary.active,
 header .btn-primary:active,
 header .open>.dropdown-toggle.btn-primary{
-  /* background-color: #004aff; */
   background-color: transparent;
   border-color: #4d9bfd;
-  color: #4d9bfd!important;
   height: 40px;
   margin: 10px 0;
   width: auto;
 }
-header .btn-primary.active:hover,
-header .btn-primary.active:focus,
-header .btn-primary:active:focus,
-header .btn-primary:active:hover{
-  color: white!important;
-  border-color: #4d9bfd;
-  background-color: #4d9bfd!important;
-  transition: background-color 0.5s;
-}
+/* Link btn BS header -> Sign Up*/
 #lastbtn{
   max-width: 72px;
 }
 #lastbtn a{
   padding: 4px 7px;
+  color: #4d9bfd/*!important*/;
 }
+#lastbtn a:hover{
+  color: white;
+  border-color: #4d9bfd;
+  background-color: #4d9bfd;
+  transition: background-color 0.5s;
+}
+
 /* Hamburger BS */
 header .navbar-default .navbar-toggle{
   border: 1px solid transparent;
@@ -159,8 +161,8 @@ header .navbar-default .navbar-toggle{
 header .navbar-default .navbar-toggle .icon-bar{
   background-color: #004aff;
 }
-/* BS bottone e navbar collapse visibili fino a 991px (Soluzione presa da internet)*/
-@media (max-width: 991px) {
+/* BS bottone e navbar collapse visibili fino a 991px */
+@media (max-width: 1199px) {
   .navbar-header {
     float: none;
   }
@@ -210,8 +212,7 @@ header .navbar-default .navbar-toggle .icon-bar{
 /* Poprietà main */
 /* Riga jumbojoin */
 .jumbojoin{
-  background-color: dodgerblue; /* Debug */
-  min-height: 500px; /* Debug */
+  background-color: dodgerblue;
   background-image: url("../img/jumbo.svg");
   background-position: right 0 bottom 0;
   background-size: cover;
@@ -222,7 +223,7 @@ header .navbar-default .navbar-toggle .icon-bar{
 .jumbojoin .big{
   font-size: calc(30px + 0.5vw);
 }
-/* Finestra bianca sx */
+  /* Finestra bianca google */
 .googlesign{
   background-color: white;
   padding: 15px 20px 30px;
@@ -232,6 +233,7 @@ header .navbar-default .navbar-toggle .icon-bar{
 .googlesign h3, .jumbojoin h2{
   font-weight: 700;
 }
+  /* Login */
 .googlesign form input{
   width: 100%;
   min-height: 35px;
@@ -240,6 +242,9 @@ header .navbar-default .navbar-toggle .icon-bar{
   border-radius: 5px;
   margin: 0 0 15px;
   color: black;
+}
+.googlesign p{
+  margin-top: 10px;
 }
 
 /* Bottoni BS finestra bianca */
@@ -254,7 +259,7 @@ header .navbar-default .navbar-toggle .icon-bar{
   overflow: hidden;
   font-weight: 600;
 }
-/* Bottoni:hover BS finestra bianca */
+/* Bottoni:hover BS finestra bianca :hover */
 .googlesign  .btn-primary.active:hover,
 .googlesign  .btn-primary.active:focus,
 .googlesign  .btn-primary:active:focus,
@@ -279,35 +284,20 @@ header .navbar-default .navbar-toggle .icon-bar{
   float: left;
   height: 20px;
 }
-.googlesign p{
-  margin-top: 10px;
-}
-/* link terms */
-.blue-link{
-  text-decoration: none;
-  color: dodgerblue;
-}
-.blue-link:hover{
-  text-decoration: none;
-  color: blue;
-  transition: color 0.7s;
-}
-.blue-link i{
-  vertical-align: middle;
-}
+/* Link termini di servizio */
 .googlesign .blue-link{
   text-decoration: underline;
 }
+
 /* Riga partners */
-.partners{
-  min-height: 150px;  /* Debug */
-}
+  /* Imgs riga partners */
 .partners img{
   max-width: 100%;
   min-height: 150px;
   overflow: hidden;
   padding: 0 10px;
 }
+  /* Imgs che cambiano altezza a Ypx */
 @media all and (min-width: 768px) and (max-width: 991px) {
   .partners img{
     min-height: 120px;
@@ -328,6 +318,7 @@ header .navbar-default .navbar-toggle .icon-bar{
     margin-bottom: 15px;
   }
 }
+/* Lista riga deploy */
 .deploy ul{
   list-style-type: none;
   border-left: 2px solid #cecece;
@@ -343,10 +334,12 @@ header .navbar-default .navbar-toggle .icon-bar{
   color: darkgrey;
   text-decoration: none;
 }
+  /* Finestra riga deploy */
 .deploy .finestra{
   text-align: left;
 }
-/* Riga designed, slide */
+
+/* Riga designed con slide */
 .slide{
   position: relative;
 }
@@ -354,30 +347,34 @@ header .navbar-default .navbar-toggle .icon-bar{
   max-width: 100%;
   margin-bottom: 10px;
 }
-.slide i, .slide-window i:not(.blue-link i){
+  /* Proprietà icone slide img e slide div */
+.slide i, .slide-window a:not(.blue-link) i{
   font-size: 30px;
   vertical-align: middle;
   position: absolute;
   transform: translate(0, -50%);
 }
+  /* Icone scompaiono a Ypx */
 @media all and (max-width: 767px) {
   .slide i, .slide-window i{
     display: none;
   }
 }
+  /* Icona freccia SX */
 .slide i.left, .slide-window i.left{
   color: grey;
   margin-right: 2%;
   top: 50%;
   left: -30px;
 }
+  /* Icona freccia DX */
 .slide i.right, .slide-window i.right{
   color: navy;
   margin-left: 2%;
   top: 50%;
   right: -30px;
 }
-
+  /* Pallini blu slide */
 .blue-dot{
   height: 12px;
   width: 12px;
@@ -386,29 +383,33 @@ header .navbar-default .navbar-toggle .icon-bar{
   border: 2px solid dodgerblue;
   border-radius: 50%;
 }
-.blue-dot:hover, .blue-dot#clicked{
+.blue-dot:hover, .blue-dot.clicked{
     background-color: dodgerblue;
 }
+
 /* Riga features */
 .features{
   margin-top: 20px;
   text-align: left;
 }
+
 /* Riga region */
 .region, .prefooter{
   background: linear-gradient(to bottom, #0048c5 50%, #001e9a 100%);
 }
-/* tabella regioni */
+  /* tabella regioni */
 .region table{
   width: 100%;
   margin: 10px 0 30px;
 }
+  /* Riga tabella */
 .region tr {
   border-bottom: 1px solid white;
 }
 .region tr:last-child {
   border-bottom-width: 0;
 }
+  /* Colonna tabella */
 .region td{
   padding: 10px 15px;
   text-align: left;
@@ -419,6 +420,7 @@ header .navbar-default .navbar-toggle .icon-bar{
 .region table a{
   color: #00d5d1;
 }
+
 /* Riga developmente slide */
 .slide-window{
   background-color: white;
@@ -465,7 +467,7 @@ header .navbar-default .navbar-toggle .icon-bar{
 
 /* Proprietà footer */
 footer{
-  padding: 40px 0 20px;
+  padding: 50px 0 30px;
   background-color: #031c4e;
   min-height: 400px;
 }
@@ -484,7 +486,7 @@ footer ul{
 footer li{
   margin-bottom: 10px;
 }
-footer .non-inline li{
+footer .non-block li{
   display: inline-block;
 }
 footer a{
