@@ -143,6 +143,7 @@ header .btn-primary:active:hover{
   color: white!important;
   border-color: #4d9bfd;
   background-color: #4d9bfd!important;
+  transition: background-color 0.5s;
 }
 #lastbtn{
   max-width: 72px;
@@ -260,6 +261,7 @@ header .navbar-default .navbar-toggle .icon-bar{
 .googlesign  .btn-primary:active:hover{
   background-color: blue;
   border-color: blue;
+  transition: background-color 0.4s;
 }
 /* Bottoni BS google */
 .googlesign #google {
@@ -267,6 +269,10 @@ header .navbar-default .navbar-toggle .icon-bar{
   border: 1px solid #cecece;
   color: grey;
   position: relative;
+}
+.googlesign #google:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
 }
 /* Immagine btn BS google */
 #google img{
@@ -280,6 +286,11 @@ header .navbar-default .navbar-toggle .icon-bar{
 .blue-link{
   text-decoration: none;
   color: dodgerblue;
+}
+.blue-link:hover{
+  text-decoration: none;
+  color: blue;
+  transition: color 0.7s;
 }
 .blue-link i{
   vertical-align: middle;
@@ -343,7 +354,7 @@ header .navbar-default .navbar-toggle .icon-bar{
   max-width: 100%;
   margin-bottom: 10px;
 }
-.slide i, .slide-window i{
+.slide i, .slide-window i:not(.blue-link i){
   font-size: 30px;
   vertical-align: middle;
   position: absolute;
@@ -384,7 +395,7 @@ header .navbar-default .navbar-toggle .icon-bar{
   text-align: left;
 }
 /* Riga region */
-.region{
+.region, .prefooter{
   background: linear-gradient(to bottom, #0048c5 50%, #001e9a 100%);
 }
 /* tabella regioni */
@@ -431,8 +442,58 @@ header .navbar-default .navbar-toggle .icon-bar{
 .slide-window div{
   margin-bottom: 20px;
 }
+
+/* Riga prefooter */
+.prefooter h2{
+  margin-bottom: 30px;
+}
+ /* BS btn create account */
+.prefooter .btn-primary.active,
+.prefooter .btn-primary:active,
+.prefooter .open>.dropdown-toggle.btn-primary{
+  background-color: white;
+  color: dodgerblue;
+  border-width: 0;
+}
+.prefooter .btn-primary.active:focus,
+.prefooter .btn-primary.active:hover,
+.prefooter .btn-primary.active:focus,
+.prefooter .btn-primary.active:hover{
+  opacity: 0.7;
+  transition: 0.8s;
+}
+
 /* Proprietà footer */
 footer{
-  background-color: blue;
+  padding: 40px 0 20px;
+  background-color: #031c4e;
   min-height: 400px;
+}
+footer img{
+  margin-bottom: 10px;
+}
+footer p{
+  margin-bottom: 0;
+}
+footer span{
+  color: #7a859d;
+}
+footer ul{
+  list-style-type: none;
+}
+footer li{
+  margin-bottom: 10px;
+}
+footer .non-inline li{
+  display: inline-block;
+}
+footer a{
+  color: grey;
+}
+footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+footer i{
+  margin: 15px 7px 5px 0;
 }
