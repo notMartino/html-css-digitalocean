@@ -68,3 +68,62 @@
   font-weight: 600;
   box-shadow: 0 0 5px 1px grey;
 }
+
+/* BONUS Slide BS */
+.greyback .slide img{
+  margin-bottom: 0;
+}
+
+/* Proprietà bottoni sotto */
+.greyback .carousel-inner{
+  margin: 40px 0;
+}
+.greyback .carousel-indicators li{
+  border: 2px solid dodgerblue;
+}
+.greyback .carousel-indicators .active{
+  background-color: dodgerblue;
+}
+
+.greyback .carousel-indicators{
+  bottom: -50px;
+}
+@media screen and (min-width: 768px){
+  .greyback .carousel-indicators {
+    bottom: -50px;
+  }
+}
+
+/* Proprietà freccie dx/sx */
+.greyback .carousel-control.right,
+.greyback .carousel-control.left{
+  background-color: transparent;
+  background-image: none;
+}
+.greyback .carousel-control.right{
+  right: -16%;
+}
+.greyback .carousel-control.left{
+  left: -16%;
+}
+@media screen and (max-width: 767px){
+  .greyback .carousel-control.right,
+  .greyback .carousel-control.left{
+    display: none;
+  }
+}
+
+/* Icona freccie dx/sx */
+.carousel-control .glyphicon-arrow-left{
+  left: 50%;
+}
+.carousel-control .glyphicon-arrow-right{
+  right: 50%;
+}
+.carousel-control .glyphicon-arrow-left, .carousel-control .glyphicon-arrow-right{
+  color: navy;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
